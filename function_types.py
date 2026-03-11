@@ -1,7 +1,13 @@
-def saludar(nombre):
-    """Saluda al usuario por su nombre."""
-    return f"¡Hola, {nombre}!"
+def list_shift(lista, valor):
+    for i in range(len(lista)):
+        lista[i] = lista[i] + valor
 
-# Llamando la función
-mensaje = saludar("Alicia")
-print(mensaje)
+
+def calc_avg(lista):
+    suma = sum(lista)
+    promedio = suma / len(lista)
+    return float(promedio)
+
+
+def print_normalized(lista):
+    print(lista)
