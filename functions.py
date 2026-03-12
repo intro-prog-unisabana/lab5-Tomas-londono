@@ -1,5 +1,7 @@
 def promedio_estudiante(calificaciones):
-    suma = sum(calificaciones)          
-    cantidad = len(calificaciones)      
-    promedio = suma / cantidad          
-    return float(promedio)   
+    if len(calificaciones) == 0:
+        return 0.0
+    promedio = sum(calificaciones) / len(calificaciones)
+    return float(promedio) 
+calificaciones = []
+print(promedio_estudiante(calificaciones))
